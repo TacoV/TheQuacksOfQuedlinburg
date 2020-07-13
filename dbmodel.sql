@@ -42,11 +42,11 @@ alter table player
 	;
 
 create table if not exists fortuneteller_card (
-	card_id int unsigned not null auto_increment,	-- primary key
-	card_name varchar(50) not null,					-- The name of the card, we'll build our logic around this
-	card_type_arg int(11) not null,					-- Always 0
-	card_location varchar(50) not null,				-- Either deck, table or discard
-	card_location_arg int(11) not null,				-- Always 0
+	card_id				int unsigned not null auto_increment,
+	card_name			varchar(50) not null,
+	card_type_arg		int(11) not null,
+	card_location		varchar(50) not null,
+	card_location_arg	int(11) not null,
 	primary key (card_id)
 );
 
