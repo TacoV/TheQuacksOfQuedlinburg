@@ -33,3 +33,25 @@
 -- Example 2: add a custom field to the standard "player" table
 -- ALTER TABLE `player` ADD `player_my_custom_field` INT UNSIGNED NOT NULL DEFAULT '0';
 
+alter table player
+	add flask_active smallint not null default 1,
+	add kettle_exploded smallint not null default 0,
+	add points int not null default 0,
+	add droplet_pos int not null default 0,
+	add rubies int not null default 0
+	;
+
+create table if not exists fortuneteller_card (
+	card_id int unsigned not null auto_increment,
+	card_name varchar(50) not null,
+	primary key (card_id)
+);
+
+create table if not exists chip (
+	chip_id int unsigned not null auto_increment,
+	chip_color varchar(20) not null,
+	chip_value smallint not null,
+	chip_location varchar(20) not null,
+	chip_location_arg int(11) not null,
+	primary key (chip_id)
+);
