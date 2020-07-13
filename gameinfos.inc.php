@@ -13,25 +13,25 @@
 $gameinfos = array( 
 
 // Name of the game in English (will serve as the basis for translation) 
-'game_name' => "My Great Game",
+'game_name' => "The Quacks of Quedlinburg",
 
 // Game designer (or game designers, separated by commas)
-'designer' => 'John Doe',       
+'designer' => 'Wolfgang Warsch',       
 
 // Game artist (or game artists, separated by commas)
-'artist' => 'Jane Doe',         
+'artist' => 'Dennis Lohausen, Wolfgang Warsch',         
 
 // Year of FIRST publication of this game. Can be negative.
-'year' => 2000,                 
+'year' => 2018,                 
 
 // Game publisher
-'publisher' => 'My Publishing Company',                     
+'publisher' => 'Schmidt Spiele',                     
 
 // Url of game publisher website
-'publisher_website' => 'http://www.mypublishingcompany.com/',   
+'publisher_website' => 'https://www.schmidtspiele.de',   
 
 // Board Game Geek ID of the publisher
-'publisher_bgg_id' => 1234,
+'publisher_bgg_id' => 38,
 
 // Board game geek ID of the game
 'bgg_id' => 244521,
