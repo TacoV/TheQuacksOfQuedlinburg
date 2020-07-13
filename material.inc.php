@@ -32,6 +32,5 @@ $this->card_types = array(
 
 */
 
-
-
+$this->fortuneteller_cardnames = array_map(function($n) { return sprintf('Fortuneteller card %02d', $n); }, range(1, 28) );
 

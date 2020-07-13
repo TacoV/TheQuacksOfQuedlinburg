@@ -76,6 +76,20 @@ class TheQuacksOfQuedlinburg extends Table
         
         /************ Start the game initialization *****/
 
+		// Create fortuneteller deck
+        $this->fortuneteller = self::getNew( "module.common.deck" );
+        $this->fortuneteller->init( "fortuneteller_card" );
+		
+		$card = [];
+		foreach( $this->fortuneteller_cardnames as $cardname ) {
+			$card[] = [
+				'type' => $cardname,
+				'type_arg' => 0,
+				'nbr' => 1,
+			];
+		}
+		$this->fortuneteller->createCards($cards);
+
         // Init global values with their initial values
         //self::setGameStateInitialValue( 'my_first_global_variable', 0 );
         
